@@ -9,9 +9,20 @@
       type="text/javascript"
       src="https://public.tableau.com/javascripts/api/tableau-2.min.js"
     ></script>
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <h1>Welcome to B2S!</h1>
+    <div>
+      <button id="pdfButton">Get PDF</button>
+      <button id="ppButton">Get PowerPoint</button>
+      <button id="swapViz">Swap Viz</button>
+    </div>
+    <div class="rangeFilter">
+      <input type="number" placeholder="min value" id="minValue" />
+      <input type="number" placeholder="max value" id="maxValue" />
+      <button disabled id="filterButton">Filter!</button>
+    </div>
     <div id="vizContainer"></div>
 
     <script type="text/javascript" src="./app.js"></script>
